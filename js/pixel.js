@@ -1,5 +1,3 @@
-
-
 const table = document.getElementById('bodyTable');
 const inputPoke = document.getElementById('pokeName');
 const inputBiomes = document.getElementById('inputBiomes');
