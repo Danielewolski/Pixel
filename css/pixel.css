@@ -66,6 +66,7 @@ select{
     outline: 0;
     padding: 13px 18px;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+    margin-bottom: 10px;
 }
 
 /* Input Biomes */
@@ -79,6 +80,7 @@ select{
     outline: 0;
     padding: 12px 18px;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+    margin-bottom: 10px;
 }
 
 /* Clean */
@@ -93,6 +95,7 @@ select{
     border-radius: 2px;
     padding: 12px 18px;
     border: 0;
+    margin-bottom: 10px;
 }
 
 .cleanBtn:hover{

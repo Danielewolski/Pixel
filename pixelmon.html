@@ -11,7 +11,7 @@
             <h1>Pixelmon Info</h1>
 
             <div class="my-4">
-                <input id="pokeName" type="text" onkeyup="searchPokemon()" class="searchInput" placeholder="Your Pok&eacute;mon" />
+                <input id="pokeName" type="text" onkeyup="searchPokemon(); resetFilters('inputPoke')" class="searchInput" placeholder="Your Pok&eacute;mon" />
                 <button type="button" class="btn" onclick="searchPokemon()">Search</button>
             </div>
 
@@ -20,8 +20,8 @@
                 <!-- <select>
                     <option>Biomes</option>
                 </select> -->
-                <input id="inputBiomes" type="text" class="searchInputBiome" placeholder="Biomes" />
-                <select id="selectTime" onchange="changeTime(this)">
+                <input id="inputBiomes" type="text" onkeyup="searchBiomes(); resetFilters('inputBiomes')" class="searchInputBiome" placeholder="Biomes" />
+                <select id="selectTime" onchange="changeTime(this); resetFilters('inputTime')">
                     <option value="time">Time</option>
                     <option value="Dawn">Dawn</option>
                     <option value="Morning">Morning</option>

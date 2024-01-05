@@ -29,18 +29,47 @@ function searchPokemon(){
     if(name.length == 0){
         loadTableData();
     }
-    else{
-        name = name.toLowerCase();
-        let firstLetter = name[0].toUpperCase();
-        name = firstLetter + name.slice(1);
-        name = name.trim();
-    
+    else{    
         const filteredLeg = leg.filter(function(item){
-            return item.pokemon == name;
+            return  item.pokemon.toLowerCase().match(name);
         })
         filteredInsertTable(filteredLeg);
     }
     
+}
+
+function searchBiomes(){
+    let biome = document.getElementById('inputBiomes').value.toLowerCase(); 
+    let time = document.getElementById('selectTime').value; 
+    // const completelyFilteredLeg; 
+
+
+    if(biome.length == 0){
+        loadTableData();
+        
+    }
+    else{    
+        var completelyFilteredLeg = leg.filter(function(item){
+            return item.biomes.match(biome);
+        })
+
+        // console.log(time)
+        if(time != 'time'){
+            var completelyFilteredLeg2 = completelyFilteredLeg.filter(function(item){
+                console.log(item.time)
+                return item.time == time;
+            })
+            filteredInsertTable(completelyFilteredLeg2);
+        }
+        else{
+            filteredInsertTable(completelyFilteredLeg);
+        }
+
+        // filteredInsertTable(completelyFilteredLeg);
+    }
+
+
+
 }
 
 function changeTime(val){
@@ -79,8 +108,21 @@ function resetFilters(val){
         case 'btnClean' : {
             inputPoke.value = '';
             inputBiomes.value = '';
-            selectTime.value = 'time'
-            break
+            selectTime.value = 'time';
+            break;
+        }
+        case 'inputPoke' : {
+            inputBiomes.value = '';
+            selectTime.value = 'time';
+            break;
+        }
+        case 'inputBiomes' : {
+            inputPoke.value = '';
+            break;
+        }
+        case 'inputTime' : {
+            inputPoke.value = '';
+            break;
         }
     }
 
