@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/pixel.css">
+        <style>
+        </style>
+    </head>
+    <body onload="loadTableData()">
+        <div class="container">
+            <h1>Pixelmon Info</h1>
+
+            <div class="my-4">
+                <input id="pokeName" type="text" onkeyup="searchPokemon()" class="searchInput" placeholder="Your Pok&eacute;mon" />
+                <button type="button" class="btn" onclick="searchPokemon()">Search</button>
+            </div>
+
+            <div class="my-3">
+                <h3>Filter by</h3>
+                <!-- <select>
+                    <option>Biomes</option>
+                </select> -->
+                <input id="inputBiomes" type="text" class="searchInputBiome" placeholder="Biomes" />
+                <select id="selectTime" onchange="changeTime(this)">
+                    <option value="time">Time</option>
+                    <option value="Dawn">Dawn</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Day">Day</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Dusk">Dusk</option>
+                    <option value="Night">Night</option>
+                    <option value="Midnight">Midnight</option>
+                </select>
+                <button type="button" class="cleanBtn" onclick="resetFilters('btnClean')">Clean</button>
+            </div>
+
+            <table class="table table-bordered table-hover">
+                <!-- <caption class="text-center">An example of a responsive table based on RWD-Table-Patterns' <a href="http://gergeo.se/RWD-Table-Patterns/" target="_blank"> solution</a>:</caption> -->
+                <thead>
+                  <tr>
+                    <th>Pokèmon</th>
+                    <th data-priority="1">Biomes</th>
+                    <th data-priority="2">Time</th>
+                    <th data-priority="3">Others</th>
+                    <th data-priority="4">Catchrate</th>
+                  </tr>
+                </thead>
+                <tbody id="bodyTable">
+                  <!-- <tr>
+                    <td>Arceus</td>
+                    <td>Any</td>
+                    <td>Any</td>
+                    <td>Timespace Altar with an Azure Flute</td>
+                    <td>3%</td>
+                  </tr> -->
+                </tbody>
+                <!-- <tfoot>
+                  <tr>
+                    <td colspan="5" class="text-center">Data retrieved from <a href="http://www.infoplease.com/ipa/A0855611.html" target="_blank">infoplease</a> and <a href="http://www.worldometers.info/world-population/population-by-country/" target="_blank">worldometers</a>.</td>
+                  </tr>
+                </tfoot> -->
+              </table>
+        </div>
+        <script src="js/pixel.js"></script>
+    </body>
+</html>
