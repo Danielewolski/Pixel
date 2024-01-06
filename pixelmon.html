@@ -20,16 +20,16 @@
                 <!-- <select>
                     <option>Biomes</option>
                 </select> -->
-                <input id="inputBiomes" type="text" onkeyup="searchBiomes(); resetFilters('inputBiomes')" class="searchInputBiome" placeholder="Biomes" />
-                <select id="selectTime" onchange="changeTime(this); resetFilters('inputTime')">
+                <input id="inputBiomes" type="text" onkeyup="filterBy(); resetFilters('inputBiomes')" class="searchInputBiome" placeholder="Biomes" />
+                <select id="selectTime" onchange="filterBy(); resetFilters('inputTime')">
                     <option value="time">Time</option>
-                    <option value="Dawn">Dawn</option>
-                    <option value="Morning">Morning</option>
-                    <option value="Day">Day</option>
-                    <option value="Afternoon">Afternoon</option>
-                    <option value="Dusk">Dusk</option>
-                    <option value="Night">Night</option>
-                    <option value="Midnight">Midnight</option>
+                    <option value="dawn">Dawn</option>
+                    <option value="morning">Morning</option>
+                    <option value="day">Day</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="dusk">Dusk</option>
+                    <option value="night">Night</option>
+                    <option value="midnight">Midnight</option>
                 </select>
                 <button type="button" class="cleanBtn" onclick="resetFilters('btnClean')">Clean</button>
             </div>
