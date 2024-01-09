@@ -120,6 +120,18 @@ function resetFilters(val){
 
 }
 
+window.onload = function(){
+    loadTableData();
+    // getPokemon();
+}
+
+async function getPokemon(){
+    let url = "https://pokeapi.co/api/v2/pokemon/ditto/"
+    let res = await fetch(url);
+    let pokemon = await res.json();
+    console.log(pokemon)
+}
+
 const leg = [
     { pokemon: 'Arceus', biomes: 'Any', time: 'Any', others: 'Timespace Altar with an Azure Flute', catchrate: '3%' },
     { pokemon: 'Articuno', biomes: 'Any', time: 'Any', others: 'Frozen Altar with a charged orb of frozen souls', catchrate: '3%' },
