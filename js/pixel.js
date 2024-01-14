@@ -135,7 +135,7 @@ async function getPokemon(){
 const leg = [
     { pokemon: 'Arceus', biomes: 'Any', time: 'Any', others: 'Timespace Altar with an Azure Flute', catchrate: '3%' },
     { pokemon: 'Articuno', biomes: 'Any', time: 'Any', others: 'Frozen Altar with a charged orb of frozen souls', catchrate: '3%' },
-    { pokemon: 'Azelf', biomes: 'Any', time: 'Morning', others: 'Any', catchrate: '3%' },
+    { pokemon: 'Azelf', biomes: 'boreal_forest_hills, seasonal_deciduous_forest, zelkova_forest, stone_forest, deciduous_clearing, great_lake_isles, red_oak_forest_hills, maple_taiga, desert_lakes, skyris_highlands_clearing, woodlands, jacaranda_forest, maple_hills, seasonal_forest, red_oak_forest, wooded_meadow, skyris_peaks, skyris_highlands, forest, deciduous_forest_hills, oasis, forest_fault, great_lakes, zelkova_clearing, boreal_forest, wooded_grassland_plateau, deciduous_forest, zelkova_forest_hills, grove, flower_forest, boreal_clearing, seasonal_forest_hills, jacaranda_forest_hills, orchard, fresh_water_lake, seasonal_deciduous_forest_hills, skyris_steeps, pointed_stone_forest, jacaranda_clearing, pumpkin_forest, seasonal_deciduous_clearing, wooded_hills', time: 'Morning', others: 'Any', catchrate: '3%' },
     { pokemon: 'Calyrex', biomes: 'Any', time: 'Any', others: 'Any', catchrate: '3%' },
     { pokemon: 'Celebi', biomes: 'Any', time: 'Any', others: 'Altar & GS Ball', catchrate: '45%' },
     { pokemon: 'Chien-Pao', biomes: 'snowy_taiga_mountains, alps, snowy_taiga_hills, snowy mountains', time: 'Night', others: '//', catchrate: '6%' },
