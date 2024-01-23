@@ -117,7 +117,7 @@ function resetFilters(val){
             break;
         }
     }
-    loadTableData();
+    // loadTableData();
 
 }
 
