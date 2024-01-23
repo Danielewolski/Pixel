@@ -101,6 +101,7 @@ function resetFilters(val){
             inputPoke.value = '';
             inputBiomes.value = '';
             selectTime.value = 'time';
+            loadTableData();
             break;
         }
         case 'inputPoke' : {
@@ -117,7 +118,6 @@ function resetFilters(val){
             break;
         }
     }
-    // loadTableData();
 
 }
 
